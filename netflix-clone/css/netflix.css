@@ -1,0 +1,116 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background: var(--preto);
+    font-family: Helvetica, sans-serif, Arial;
+    color: white;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* justify-content: space-between; */
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 10px;
+    
+    transition: .1s ease all;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    color: #AAA;
+}
+
+/* Filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background:  linear-gradient(rgba(0,0,0,.50),rgba(175, 70, 70,.50)100%), url('../img/fundo.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 75%;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 25px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/* Carrosel */
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.carrosel-filmes .box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor:pointer;
+}
